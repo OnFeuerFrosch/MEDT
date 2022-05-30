@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css'><link rel="stylesheet" href="./menu/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>
+    <title>Map</title>
+
+    <style>
+        #map{
+            height: 550px;
+            width: 650px;
+            margin: 2rem auto;
+        }
+        body{
+            overflow: hidden;
+            background-color: gray;
+        }
+        .title{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class='dashboard'>
+        <div class="dashboard-nav">
+            <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#"
+                                                                                       class="brand-logo"><i
+                    class="fas fa-anchor"></i> <span>Müll</span></a></header>
+            <nav class="dashboard-nav-list"><a href="../Startseite/Startseite.html" class="dashboard-nav-item"><i class="fas fa-home"></i>
+                Home </a><a
+                    href="#" class="dashboard-nav-item active"><i class="fas fa-tachometer-alt"></i> Karte
+            </a><a
+                 href="" class="dashboard-nav-item"><i class="fas fa-user"></i> Wichtige Personen </a>
+                <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
+                        class="fas fa-money-check-alt"></i> Archiv </a>
+                    <div class='dashboard-nav-dropdown-menu'><a href="#"
+                                                                class="dashboard-nav-dropdown-item">All</a><a
+                            href="#" class="dashboard-nav-dropdown-item">Recent</a><a
+                            href="#" class="dashboard-nav-dropdown-item"> Projections</a>
+                    </div>
+                </div>
+                <a href="../Timeline_Test/dist/index.html" class="dashboard-nav-item"><i class="fas fa-cogs"></i> Timeline </a><a
+                        href="#" class="dashboard-nav-item"><i class="fas fa-user"></i> Impressum </a>
+              <div class="nav-item-divider"></div>
+              
+            </nav>
+        </div>
+        <div class='dashboard-app'>
+            <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
+            <div class='dashboard-content'>
+                <div class='container'>
+                    <b><em><h1 class="title" style="color: white;">Müllverbrennungsanlagen in Wien</h1></em></b>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script><script  src="./menu/script.js"></script>
+
+</body>
+</html>
